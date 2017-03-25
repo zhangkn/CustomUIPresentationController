@@ -16,7 +16,7 @@
 @implementation KNTransition
 
 
-
+HSSingletonM(KNTransition);
 
 #pragma mark - ******** modal 展示的自定义
 

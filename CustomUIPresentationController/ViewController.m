@@ -31,7 +31,10 @@
     KNSecondViewController *secondVC = [[KNSecondViewController alloc]init];
 #warning must  设置modalPresentationStyle样式为自定义
     secondVC.modalPresentationStyle = UIModalPresentationCustom;//设置展示样式,包含了modalTransitionStyle的自定义
-    secondVC.transitioningDelegate = self.transition;//此协议用于实现自定义UIPresentationController
+//    secondVC.transitioningDelegate = self.transition;//此协议用于实现自定义UIPresentationController
+    
+    secondVC.transitioningDelegate = [KNTransition shareKNTransition];//此协议用于实现自定义UIPresentationController
+
     //2.  设置动画样式
     
 //    secondVC.modalTransitionStyle = self.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;

@@ -46,6 +46,7 @@
 		E1D36A051E861B600084B97B /* KNDismissedUIViewControllerAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNDismissedUIViewControllerAnimatedTransitioning.m; sourceTree = "<group>"; };
 		E1D36A0A1E863AC90084B97B /* KNTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTransition.h; sourceTree = "<group>"; };
 		E1D36A0B1E863AC90084B97B /* KNTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTransition.m; sourceTree = "<group>"; };
+		E1D36A101E863D580084B97B /* HSSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSSingleton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +81,6 @@
 			children = (
 				E1D36A0D1E863C720084B97B /* Home */,
 				E1D36A081E8639FA0084B97B /* Modal */,
-				E1D369FF1E8616BD0084B97B /* EXT */,
 				E1D369DC1E8607670084B97B /* Supporting Files */,
 			);
 			path = CustomUIPresentationController;
@@ -99,13 +99,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E1D369F31E8607820084B97B /* VC(实现自定义modal的代理VC) */ = {
+		E1D369F31E8607820084B97B /* Transition(实现自定义modal的代理类) */ = {
 			isa = PBXGroup;
 			children = (
 				E1D36A0A1E863AC90084B97B /* KNTransition.h */,
 				E1D36A0B1E863AC90084B97B /* KNTransition.m */,
 			);
-			name = "VC(实现自定义modal的代理VC)";
+			name = "Transition(实现自定义modal的代理类)";
 			sourceTree = "<group>";
 		};
 		E1D369FF1E8616BD0084B97B /* EXT */ = {
@@ -141,8 +141,9 @@
 		E1D36A081E8639FA0084B97B /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				E1D36A0F1E863D2D0084B97B /* Tool */,
 				E1D36A071E861D840084B97B /* UIPresentationController(  自定义展示样式) */,
-				E1D369F31E8607820084B97B /* VC(实现自定义modal的代理VC) */,
+				E1D369F31E8607820084B97B /* Transition(实现自定义modal的代理类) */,
 				E1D36A001E861A760084B97B /* Toolmodal(自定义动画) */,
 			);
 			name = Modal;
@@ -174,6 +175,15 @@
 				E1D369E31E8607670084B97B /* ViewController.m */,
 			);
 			name = VC;
+			sourceTree = "<group>";
+		};
+		E1D36A0F1E863D2D0084B97B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E1D36A101E863D580084B97B /* HSSingleton.h */,
+				E1D369FF1E8616BD0084B97B /* EXT */,
+			);
+			name = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
