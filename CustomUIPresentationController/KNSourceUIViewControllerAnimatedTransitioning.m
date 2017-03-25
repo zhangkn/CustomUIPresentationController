@@ -25,6 +25,7 @@
 /**
  避免 show dismss  都执行此代码的动画，可采用不同的nullable id <UIViewControllerAnimatedTransitioning> 对象进行动画处理
  */
+#if 0
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext{
     UIView *transitionContextToView =[transitionContext viewForKey:UITransitionContextToViewKey];
     
@@ -45,6 +46,31 @@
     }];
     
 }
+#endif
+
+
+#pragma mark - ******** 实现三维旋转,利用视图的图层 layer
+
+- (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext{
+    UIView *transitionContextToView =[transitionContext viewForKey:UITransitionContextToViewKey];
+    
+    transitionContextToView.layer.transform = CATransform3DMakeRotation(M_PI_2, 0 , 1, 0);//绕着x,y,z 这个轴线进行旋转
+    
+    
+    [UIView animateWithDuration:5.0 animations:^{
+        transitionContextToView.layer.transform = CATransform3DIdentity;
+
+        
+        
+    } completion:^(BOOL finished) {
+        //必须告诉它  完成了动画，否则 动画进程掌握CPU
+#warning 必须有此行代码，否则界面将不处理其它事件
+        [transitionContext completeTransition:YES];
+        
+    }];
+    
+}
+
 
 
 

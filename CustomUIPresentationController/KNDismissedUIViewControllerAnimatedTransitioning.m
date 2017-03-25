@@ -24,6 +24,7 @@
 /**
  避免 show dismss  都执行此代码的动画，可采用不同的nullable id <UIViewControllerAnimatedTransitioning> 对象进行动画处理
  */
+#if 1
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext{
     UIView *transitionContextFromView =[transitionContext viewForKey:UITransitionContextFromViewKey];
     
@@ -41,8 +42,6 @@
     }];
     
 }
-
-
-
+#endif
 
 @end

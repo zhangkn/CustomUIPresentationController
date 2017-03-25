@@ -19,6 +19,7 @@
 		E1D369FE1E8616B60084B97B /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D369FD1E8616B60084B97B /* UIView+Extension.m */; };
 		E1D36A031E861A9A0084B97B /* KNSourceUIViewControllerAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D36A021E861A9A0084B97B /* KNSourceUIViewControllerAnimatedTransitioning.m */; };
 		E1D36A061E861B600084B97B /* KNDismissedUIViewControllerAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D36A051E861B600084B97B /* KNDismissedUIViewControllerAnimatedTransitioning.m */; };
+		E1D36A0C1E863AC90084B97B /* KNTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D36A0B1E863AC90084B97B /* KNTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		E1D36A021E861A9A0084B97B /* KNSourceUIViewControllerAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSourceUIViewControllerAnimatedTransitioning.m; sourceTree = "<group>"; };
 		E1D36A041E861B600084B97B /* KNDismissedUIViewControllerAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNDismissedUIViewControllerAnimatedTransitioning.h; sourceTree = "<group>"; };
 		E1D36A051E861B600084B97B /* KNDismissedUIViewControllerAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNDismissedUIViewControllerAnimatedTransitioning.m; sourceTree = "<group>"; };
+		E1D36A0A1E863AC90084B97B /* KNTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTransition.h; sourceTree = "<group>"; };
+		E1D36A0B1E863AC90084B97B /* KNTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +78,9 @@
 		E1D369DB1E8607670084B97B /* CustomUIPresentationController */ = {
 			isa = PBXGroup;
 			children = (
-				E1D36A001E861A760084B97B /* Toolmodal(自定义动画) */,
+				E1D36A0D1E863C720084B97B /* Home */,
+				E1D36A081E8639FA0084B97B /* Modal */,
 				E1D369FF1E8616BD0084B97B /* EXT */,
-				E1D369F31E8607820084B97B /* VC */,
 				E1D369DC1E8607670084B97B /* Supporting Files */,
 			);
 			path = CustomUIPresentationController;
@@ -86,8 +89,7 @@
 		E1D369DC1E8607670084B97B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E1D369DF1E8607670084B97B /* AppDelegate.h */,
-				E1D369E01E8607670084B97B /* AppDelegate.m */,
+				E1D36A091E863A2A0084B97B /* Other */,
 				E1D369E51E8607670084B97B /* Main.storyboard */,
 				E1D369E81E8607670084B97B /* Assets.xcassets */,
 				E1D369EA1E8607670084B97B /* LaunchScreen.storyboard */,
@@ -97,16 +99,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E1D369F31E8607820084B97B /* VC */ = {
+		E1D369F31E8607820084B97B /* VC(实现自定义modal的代理VC) */ = {
 			isa = PBXGroup;
 			children = (
-				E1D369E21E8607670084B97B /* ViewController.h */,
-				E1D369E31E8607670084B97B /* ViewController.m */,
-				E1D369F41E8607F00084B97B /* KNSecondViewController.h */,
-				E1D369F51E8607F00084B97B /* KNSecondViewController.m */,
-				E1D36A071E861D840084B97B /* UIPresentationController(  自定义展示样式) */,
+				E1D36A0A1E863AC90084B97B /* KNTransition.h */,
+				E1D36A0B1E863AC90084B97B /* KNTransition.m */,
 			);
-			name = VC;
+			name = "VC(实现自定义modal的代理VC)";
 			sourceTree = "<group>";
 		};
 		E1D369FF1E8616BD0084B97B /* EXT */ = {
@@ -137,6 +136,44 @@
 				E1D369F61E8607F00084B97B /* KNSecondViewController.xib */,
 			);
 			name = "UIPresentationController(  自定义展示样式)";
+			sourceTree = "<group>";
+		};
+		E1D36A081E8639FA0084B97B /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				E1D36A071E861D840084B97B /* UIPresentationController(  自定义展示样式) */,
+				E1D369F31E8607820084B97B /* VC(实现自定义modal的代理VC) */,
+				E1D36A001E861A760084B97B /* Toolmodal(自定义动画) */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		E1D36A091E863A2A0084B97B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E1D369F41E8607F00084B97B /* KNSecondViewController.h */,
+				E1D369F51E8607F00084B97B /* KNSecondViewController.m */,
+				E1D369DF1E8607670084B97B /* AppDelegate.h */,
+				E1D369E01E8607670084B97B /* AppDelegate.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		E1D36A0D1E863C720084B97B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E1D36A0E1E863C7B0084B97B /* VC */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		E1D36A0E1E863C7B0084B97B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				E1D369E21E8607670084B97B /* ViewController.h */,
+				E1D369E31E8607670084B97B /* ViewController.m */,
+			);
+			name = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D36A0C1E863AC90084B97B /* KNTransition.m in Sources */,
 				E1D369FE1E8616B60084B97B /* UIView+Extension.m in Sources */,
 				E1D369FB1E8609270084B97B /* KNUIPresentationController.m in Sources */,
 				E1D36A031E861A9A0084B97B /* KNSourceUIViewControllerAnimatedTransitioning.m in Sources */,
