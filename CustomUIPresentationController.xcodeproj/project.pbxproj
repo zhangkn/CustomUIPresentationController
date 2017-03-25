@@ -20,6 +20,7 @@
 		E1D36A031E861A9A0084B97B /* KNSourceUIViewControllerAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D36A021E861A9A0084B97B /* KNSourceUIViewControllerAnimatedTransitioning.m */; };
 		E1D36A061E861B600084B97B /* KNDismissedUIViewControllerAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D36A051E861B600084B97B /* KNDismissedUIViewControllerAnimatedTransitioning.m */; };
 		E1D36A0C1E863AC90084B97B /* KNTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D36A0B1E863AC90084B97B /* KNTransition.m */; };
+		E1D36A121E865AA40084B97B /* present.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1D36A111E865AA40084B97B /* present.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		E1D36A0A1E863AC90084B97B /* KNTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTransition.h; sourceTree = "<group>"; };
 		E1D36A0B1E863AC90084B97B /* KNTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTransition.m; sourceTree = "<group>"; };
 		E1D36A101E863D580084B97B /* HSSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSSingleton.h; sourceTree = "<group>"; };
+		E1D36A111E865AA40084B97B /* present.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = present.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		E1D369DC1E8607670084B97B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E1D36A111E865AA40084B97B /* present.jpg */,
 				E1D36A091E863A2A0084B97B /* Other */,
 				E1D369E51E8607670084B97B /* Main.storyboard */,
 				E1D369E81E8607670084B97B /* Assets.xcassets */,
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1D369EC1E8607670084B97B /* LaunchScreen.storyboard in Resources */,
+				E1D36A121E865AA40084B97B /* present.jpg in Resources */,
 				E1D369E91E8607670084B97B /* Assets.xcassets in Resources */,
 				E1D369E71E8607670084B97B /* Main.storyboard in Resources */,
 				E1D369F81E8607F00084B97B /* KNSecondViewController.xib in Resources */,
